@@ -11,7 +11,7 @@ import com.rondri.cursomc.domain.Categoria;
 import com.rondri.cursomc.services.CategoriaService;
 
 @RestController
-@RequestMapping(value="/Categorias")
+@RequestMapping(value="/categorias")
 public class CategoriaResource {
 	
 	@Autowired
