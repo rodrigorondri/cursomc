@@ -22,9 +22,6 @@ public class PagamentoComCartao extends Pagamento{
 }
 
 
-
-
-
 	public Integer getNumeroDeParcelas() {
 		return numeroDeParcelas;
 	}
