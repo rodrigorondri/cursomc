@@ -9,6 +9,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import com.rondri.cursomc.services.DBService;
+import com.rondri.cursomc.services.EmailService;
+import com.rondri.cursomc.services.MockEmailService;
+import com.rondri.cursomc.services.SMTPEmailService;
 
 @Configuration
 @Profile("dev")
@@ -29,5 +32,12 @@ public class DevConfig {
 		dbService.instantiateTestDatabaese();
 		
 		return true;
+	}
+	
+	@Bean
+	public EmailService emailService() {
+		//return new SMTPEmailService(); naum vou usar meu email nisso
+		return new MockEmailService();
+		
 	}
 }

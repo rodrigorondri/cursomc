@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.rondri.cursomc.domain.ItemPedido;
 import com.rondri.cursomc.domain.PagamentoComBoleto;
 import com.rondri.cursomc.domain.Pedido;
-import com.rondri.cursomc.domain.Produto;
 import com.rondri.cursomc.domain.enums.EstadoPagamento;
 import com.rondri.cursomc.repositories.ItemPedidoRepository;
 import com.rondri.cursomc.repositories.PagamentoRepository;
