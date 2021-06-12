@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Profile;
 
 import com.rondri.cursomc.services.DBService;
 import com.rondri.cursomc.services.EmailService;
-import com.rondri.cursomc.services.MockEmailService;
 import com.rondri.cursomc.services.SMTPEmailService;
 
 @Configuration
@@ -36,8 +35,8 @@ public class DevConfig {
 	
 	@Bean
 	public EmailService emailService() {
-		//return new SMTPEmailService(); naum vou usar meu email nisso
-		return new MockEmailService();
+		return new SMTPEmailService(); //naum vou usar meu email nisso
+		//return new MockEmailService();
 		
 	}
 }
